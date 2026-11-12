@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Smart Fit - PE | Smart Fit | Perú</title>
-<meta name="description" content="Gimnasio Smart Fit - La red Smart Fit tiene como propósito democratizar el acceso a la práctica de actividad física de alto nivel, con planes accesibles y adhesión facilitada">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Smart - PE | Perú</title>
+<meta name="description" content="Gimnasio Smart - La red Smart tiene como propósito democratizar el acceso a la práctica de actividad física de alto nivel, con planes accesibles y adhesión facilitada">
+<link rel="preconnect" href="#">
+<link href="#" rel="stylesheet">
 <style>
 :root{--y:#ffc600;--y2:#ffd84d;--k:#1b1b1b;--g:#f4f4f4;--g2:#6b6b6b;--w:#fff;--r:16px}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -34,12 +34,6 @@ nav a:hover{border-color:var(--y)}
 .right .btn{padding:10px 22px;font-size:14px}
 .menu-btn{background:none;border:0;cursor:pointer;width:42px;height:42px;display:grid;place-content:center;gap:5px;border-radius:8px}
 .menu-btn span{display:block;width:24px;height:3px;background:var(--k);border-radius:2px}
-.country{position:relative}
-.country>button{background:var(--g);border:0;border-radius:8px;padding:8px 12px;font:inherit;font-weight:600;font-size:13px;cursor:pointer;text-transform:uppercase}
-.country ul{position:absolute;right:0;top:44px;background:var(--w);box-shadow:0 8px 24px rgba(0,0,0,.18);border-radius:12px;padding:8px;display:none;grid-template-columns:repeat(3,1fr);gap:2px;width:190px}
-.country ul.open{display:grid}
-.country li a{display:block;text-align:center;padding:6px;border-radius:6px;font-size:13px;text-transform:uppercase;font-weight:500}
-.country li a:hover{background:var(--y)}
 .drawer{position:fixed;inset:0 0 0 auto;width:min(340px,86vw);background:var(--w);z-index:80;transform:translateX(100%);transition:transform .3s;padding:24px;box-shadow:-8px 0 30px rgba(0,0,0,.2);overflow:auto}
 .drawer.open{transform:none}
 .drawer .close{background:none;border:0;font-size:32px;cursor:pointer;float:right;line-height:1}
@@ -181,23 +175,19 @@ footer a:hover{color:var(--y)}
 
 <header>
  <div class="wrap bar">
-  <a href="#" class="logo" aria-label="Smart Fit">SMART FIT</a>
+  <a href="#" class="logo" aria-label="Smart">SMART</a>
   <nav aria-label="Principal">
    <ul>
-    <li><a href="https://espacodocliente.smartfit.com.br/es-PE/login">Tu Espacio</a></li>
-    <li><a href="https://smartfit.com.pe/gimnasios">Gimnasios</a></li>
-    <li><a href="https://beneficios.smartfit.com.pe/">Beneficios Black</a></li>
-    <li><a href="https://corporativo.smartfit-peru.com/">Corporativo</a></li>
-    <li><a href="https://www.smartfit.com.pe/fitfriend">Fit Friend</a></li>
-    <li><a href="https://www.smartfit.com.pe/promociones">Promociones</a></li>
+    <li><a href="#">Tu Espacio</a></li>
+    <li><a href="#">Gimnasios</a></li>
+    <li><a href="#">Beneficios Black</a></li>
+    <li><a href="#">Corporativo</a></li>
+    <li><a href="#">Fit Friend</a></li>
+    <li><a href="#">Promociones</a></li>
    </ul>
   </nav>
   <div class="right">
-   <a class="btn" href="https://www.smartfit.com.pe/gimnasios">¡Inscríbete ya!</a>
-   <div class="country">
-    <button id="cBtn" aria-expanded="false" aria-label="Elegir país">pe ▾</button>
-    <ul id="cList"></ul>
-   </div>
+   <a class="btn" href="#">¡Inscríbete ya!</a>
    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú"><span></span><span></span><span></span></button>
   </div>
  </div>
@@ -207,28 +197,28 @@ footer a:hover{color:var(--y)}
 <aside class="drawer" id="drawer" aria-label="Menú">
  <button class="close" id="closeBtn" aria-label="Cerrar">×</button>
  <ul>
-  <li><a href="https://espacodocliente.smartfit.com.br/es-PE/login">Tu espacio</a></li>
-  <li><a href="https://smartfit.com.pe/preventa">- Preventa</a></li>
-  <li><a href="https://www.smartfit.com.pe/group/nuevas-aperturas?filters=109">- Nuevas Aperturas</a></li>
-  <li><a href="https://smartfit.com.pe/gimnasios">Gimnasios</a></li>
-  <li><a href="https://beneficios.smartfit.com.pe/">Beneficios Smart Fit</a></li>
-  <li><a href="https://corporativo.smartfit-peru.com/">Corporativo</a></li>
-  <li><a href="https://www.smartfit.com.pe/fitfriend">Fit Friend</a></li>
-  <li><a href="https://www.smartfit.com.pe/promociones">Promociones</a></li>
-  <li><a href="https://www.smartfit.com.pe/hable-con-nosostros">Habla con nosotros</a></li>
+  <li><a href="#">Tu espacio</a></li>
+  <li><a href="#">- Preventa</a></li>
+  <li><a href="#">- Nuevas Aperturas</a></li>
+  <li><a href="#">Gimnasios</a></li>
+  <li><a href="#">Beneficios Smart</a></li>
+  <li><a href="#">Corporativo</a></li>
+  <li><a href="#">Fit Friend</a></li>
+  <li><a href="#">Promociones</a></li>
+  <li><a href="#">Habla con nosotros</a></li>
  </ul>
- <a class="faq" href="https://www.smartfit.com.pe/faq"><img src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/icons/faq.svg" alt="" width="24" height="24">Preguntas Frecuentes</a>
- <p style="margin-top:24px"><a class="btn" href="https://www.smartfit.com.pe/gimnasios">¡Inscríbete ya!</a></p>
+ <a class="faq" href="#">❓ Preguntas Frecuentes</a>
+ <p style="margin-top:24px"><a class="btn" href="#">¡Inscríbete ya!</a></p>
 </aside>
 
 <main>
  <section class="hero" aria-label="Promociones">
   <div class="slides" id="slides">
-   <a class="slide" href="https://www.smartfit.com.pe/gimnasios">
+   <a class="slide" href="#">
     <img class="m" src="https://www.smartfit.com.pe/files/store/campaign/banner_mobile/1804/BANNERS-WEB_1080x1789.jpg" alt="Comienza ya - Banner">
     <img class="d" src="https://www.smartfit.com.pe/files/store/campaign/banner_desktop/1804/BANNERS-WEB_1920x850.jpg" alt="Comienza ya - Banner">
    </a>
-   <a class="slide" href="https://www.smartfit.com.pe/sedes">
+   <a class="slide" href="#">
     <img class="m" src="https://www.smartfit.com.pe/files/store/campaign/banner_mobile/1658/BANNER_PE-HOME-M.jpg" alt="Comienza ya - Banner">
     <img class="d" src="https://www.smartfit.com.pe/files/store/campaign/banner_desktop/1658/BANNER_PE-HOME-W.jpg" alt="Comienza ya - Banner">
    </a>
@@ -241,7 +231,7 @@ footer a:hover{color:var(--y)}
  <section class="find">
   <div class="wrap">
    <h1>Encuentra la sede más cercana</h1>
-   <a class="btn dark" href="https://www.smartfit.com.pe/gimnasios">Buscar sede</a>
+   <a class="btn dark" href="#">Buscar sede</a>
   </div>
  </section>
 
@@ -258,13 +248,13 @@ footer a:hover{color:var(--y)}
 
  <section class="exp">
   <div class="wrap">
-   <div class="head"><h2>Vive la experiencia Smart Fit: El gimnasio para ti</h2></div>
+   <div class="head"><h2>Vive la experiencia Smart: El gimnasio para ti</h2></div>
    <div class="grid3">
     <figure><img loading="lazy" src="https://assets.smartfit.com.br/images/new_home_pe/equipos-moderdos.webp" alt="Equipos modernos"><figcaption>Equipos modernos</figcaption></figure>
     <figure><img loading="lazy" src="https://assets.smartfit.com.br/images/new_home_pe/classes-grupales.webp" alt="Clases grupales"><figcaption>Clases grupales</figcaption></figure>
     <figure><img loading="lazy" src="https://assets.smartfit.com.br/images/new_home_pe/zona-de-entrenamiento.webp" alt="Zona de entrenamiento"><figcaption>Zona de entrenamiento</figcaption></figure>
    </div>
-   <div class="center"><a class="btn" href="https://www.smartfit.com.pe/gimnasios">¡Inscríbete ya!</a></div>
+   <div class="center"><a class="btn" href="#">¡Inscríbete ya!</a></div>
   </div>
  </section>
 
@@ -277,45 +267,41 @@ footer a:hover{color:var(--y)}
      <div class="in"><h3>Zumba</h3>
       <div class="meta"><div><span>Duración</span><b>45/50 min</b></div><div><span>Intensidad</span><b>Alta</b></div></div>
       <p>Diviértete en una clase que fusiona el baile con una rutina de ejercicios al compás de la música, mejorando tu forma física y tu coordinación.</p>
-      <a class="l" href="https://www.smartfit.com.pe/clases-grupales/zumba">Más detalles</a></div>
+      <a class="l" href="#">Más detalles</a></div>
     </article>
     <article class="card">
      <img loading="lazy" src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/tabata-cover-pe.webp" alt="Smart Tabata">
      <div class="in"><h3>Smart Tabata</h3>
       <div class="meta"><div><span>Duración</span><b>30 min</b></div><div><span>Intensidad</span><b>Alta</b></div></div>
       <p>Clase de intervalos de alta intensidad, donde ejercicios vigorosos se combinan con breves descansos para maximizar resultados. Mejora tu resistencia, fuerza y salud en general en sesiones dinámicas y efectivas.</p>
-      <a class="l" href="https://www.smartfit.com.pe/clases-grupales/smart-tabata">Más detalles</a></div>
+      <a class="l" href="#">Más detalles</a></div>
     </article>
     <article class="card">
      <img loading="lazy" src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/bike-cover-pe.webp" alt="Bike">
      <div class="in"><h3>Bike</h3>
       <div class="meta"><div><span>Duración</span><b>45/60 min</b></div><div><span>Intensidad</span><b>Alta</b></div></div>
       <p>Entrenamiento de indoor cycling que presenta 3 maneras de intensificación: lineal, ondulatoria y por intervalos; cuyo objetivo es la pérdida de grasa y el acondicionamiento cardiovascular.</p>
-      <a class="l" href="https://www.smartfit.com.pe/clases-grupales/smart-bike">Más detalles</a></div>
+      <a class="l" href="#">Más detalles</a></div>
     </article>
    </div>
-   <div class="center"><a class="btn" href="https://www.smartfit.com.pe/clases-grupales">Ver todas las clases grupales</a></div>
+   <div class="center"><a class="btn" href="#">Ver todas las clases grupales</a></div>
   </div>
  </section>
 
  <section class="app">
   <div class="wrap">
    <div>
-    <h2>Smart Fit App: una experiencia de entrenamiento completa, dentro y fuera del gimnasio.</h2>
-    <p>No importa si ya tienes experiencia o si recién estás comenzando a practicar actividad física, una cosa es segura: ¡al descargar gratis la aplicación Smart Fit, obtienes el mejor aliado para tu rutina de entrenamiento! Exclusivo para clientes.</p>
+    <h2>Smart App: una experiencia de entrenamiento completa, dentro y fuera del gimnasio.</h2>
+    <p>No importa si ya tienes experiencia o si recién estás comenzando a practicar actividad física, una cosa es segura: ¡al descargar gratis la aplicación Smart, obtienes el mejor aliado para tu rutina de entrenamiento! Exclusivo para clientes.</p>
     <div class="qr">
      <img src="https://assets.smartfit.com.br/production/newHome/qrcode.png" alt="Escanea el código para descargar gratis." width="120" height="120">
      <div>
       <p style="margin:0 0 10px;font-weight:600">Escanea el código para descargar gratis.</p>
-      <div class="stores">
-       <a href="https://play.google.com/store/apps/details?id=com.eokoe.smartfitcoach">Google Play</a>
-       <a href="https://apps.apple.com/app/smart-fit-app/id1308265270">App Store</a>
-      </div>
      </div>
     </div>
-    <p class="dev">Descarga ahora lo Smart Fit App</p>
+    <p class="dev">Descarga ahora la Smart App</p>
    </div>
-   <img loading="lazy" src="https://assets.smartfit.com.br/images/new_home_br/app-devices-v2.webp" alt="Smart Fit App en distintos dispositivos">
+   <img loading="lazy" src="https://assets.smartfit.com.br/images/new_home_br/app-devices-v2.webp" alt="Smart App en distintos dispositivos">
   </div>
  </section>
 
@@ -327,17 +313,17 @@ footer a:hover{color:var(--y)}
    </div>
    <div class="grid2">
     <article class="pc">
-     <img loading="lazy" src="https://www.smartfit.com.pe/files/store/1ea7c8ff15ba58ab211bd0a813e7a72c8cee43c716fe89d784a286afee6a.jpg" alt="Smart Fit Coach">
-     <div class="in"><h3>Smart Fit Coach</h3>
+     <img loading="lazy" src="https://www.smartfit.com.pe/files/store/1ea7c8ff15ba58ab211bd0a813e7a72c8cee43c716fe89d784a286afee6a.jpg" alt="Smart Coach">
+     <div class="in"><h3>Smart Coach</h3>
       <p>Resuelve tus dudas y personaliza tu entrenamiento y plan alimentar a través de videollamadas periódicas con un profesor y nutricionista especializado.</p>
-      <a class="btn" href="https://coach.smartfit.com.pe/">Infórmate más</a></div>
+      <a class="btn" href="#">Infórmate más</a></div>
     </article>
     <article class="pc">
-     <img loading="lazy" src="https://www.smartfit.com.pe/files/store/bf26b7174e81503d68b9f387acdc117036bc9fdf1a2a1ff42016dd096659.jpg" alt="Smart Fit Balance">
-     <div class="in"><h3>Smart Fit Balance</h3>
+     <img loading="lazy" src="https://www.smartfit.com.pe/files/store/bf26b7174e81503d68b9f387acdc117036bc9fdf1a2a1ff42016dd096659.jpg" alt="Smart Balance">
+     <div class="in"><h3>Smart Balance</h3>
       <h4>Sigue la evolución de tu cuerpo con bioimpedancia.</h4>
       <p>Realiza tu bioimpedancia.</p>
-      <a class="btn" href="https://body.smartfit.com/pe">Infórmate más</a></div>
+      <a class="btn" href="#">Infórmate más</a></div>
     </article>
    </div>
    <p class="avail">Consulta la disponibilidad de los servicios físicos en el gimnasio deseado.</p>
@@ -350,36 +336,36 @@ footer a:hover{color:var(--y)}
   <div>
    <h4>Síguenos</h4>
    <div class="soc">
-    <a href="https://www.facebook.com/smartfitpe">Facebook</a>
-    <a href="https://www.instagram.com/smartfitpe/">Instagram</a>
-    <a href="https://www.youtube.com/channel/UC9T5QGLXy2mgQePIJfjdi-Q">YouTube</a>
-    <a href="https://www.tiktok.com/@smartfitpe">TikTok</a>
-    <a href="https://www.linkedin.com/company/smart-fit-per%C3%BA/">LinkedIn</a>
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+    <a href="#">TikTok</a>
+    <a href="#">LinkedIn</a>
    </div>
-   <a class="rec" href="https://reclamaciones.smartfit.com.pe/">📖 Libro de reclamaciones</a>
+   <a class="rec" href="#">📖 Libro de reclamaciones</a>
   </div>
   <div>
-   <h4>Smart Fit</h4>
+   <h4>Smart</h4>
    <ul>
-    <li><a href="https://www.smartfit.com.pe/acerca">¿Quiénes somos?</a></li>
-    <li><a href="https://www.smartfit.com.pe/hable-con-nosostros">Habla con nosotros</a></li>
-    <li><a href="https://www.smartfit.com.pe/faq">FAQ</a></li>
-    <li><a href="https://smartfit.com.pe/contracts/politica-de-privacidad">Política de datos personales de SmartFit Perú</a></li>
-    <li><a href="http://smartfit.com.pe/contracts/formulario-derechos-archo">Formulario Derechos ARCO</a></li>
-    <li><a href="https://reclamaciones.smartfit.com.pe/">Libro de Reclamaciones</a></li>
-    <li><a href="https://www.smartfit.com.pe/sustentabilidad">Sustentabilidad</a></li>
-    <li><a href="https://smartfit-dsar.my.onetrust.com/webform/7446fc91-d4db-42f7-954c-46ef51a49cd9/96f4c1c3-1b1f-478d-8ff4-d1f1a07c7b6c">Portal de privacidad</a></li>
-    <li><a href="https://www.canaldedenuncia.com.br/smartfit/">Línea ética</a></li>
+    <li><a href="#">¿Quiénes somos?</a></li>
+    <li><a href="#">Habla con nosotros</a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">Política de datos personales de SmartFit Perú</a></li>
+    <li><a href="#">Formulario Derechos ARCO</a></li>
+    <li><a href="#">Libro de Reclamaciones</a></li>
+    <li><a href="#">Sustentabilidad</a></li>
+    <li><a href="#">Portal de privacidad</a></li>
+    <li><a href="#">Línea ética</a></li>
    </ul>
   </div>
   <div>
    <h4>Planes</h4>
    <ul>
-    <li><a href="https://www.smartfit.com.pe/planes">Conoce nuestros planes</a></li>
-    <li><a href="https://coach.smartfit.com/pe">Smart Fit Coach</a></li>
-    <li><a href="https://www.smartfit.com.pe/contratos">Documentos</a></li>
-    <li><a href="https://www.smartfit.com.pe/promociones">Promociones</a></li>
-    <li><a href="https://pa.intra-smart.com/pe-tyc-2605-sedes-en-preventa-2026/">Términos y condiciones para sedes en apertura 2026</a></li>
+    <li><a href="#">Conoce nuestros planes</a></li>
+    <li><a href="#">Smart Coach</a></li>
+    <li><a href="#">Documentos</a></li>
+    <li><a href="#">Promociones</a></li>
+    <li><a href="#">Términos y condiciones para sedes en apertura 2026</a></li>
    </ul>
   </div>
  </div>
@@ -387,16 +373,16 @@ footer a:hover{color:var(--y)}
 
 <div class="cookies" id="cookies" role="dialog" aria-label="Cookies">
  <span>Utilizamos cookies para personalizar anuncios y mejorar su experiencia en el sitio. Al continuar navegando, aceptas nuestra política de privacidad.</span>
- <div><a href="https://www.smartfit.com.pe/contratos/politica-de-privacidad">Saber más</a><button class="btn" id="ok">OK</button></div>
+ <div><a href="#">Saber más</a><button class="btn" id="ok">OK</button></div>
 </div>
 
 <script>
 // ===== Datos de planes =====
 const feats=[
- "Entrena en todos los gimnasios de Smart Fit en Perú y Latinoamérica (+2.000)",
+ "Entrena en todos los gimnasios de Smart en Perú y Latinoamérica (+2.000)",
  "Acceso ilimitado a todas las áreas de peso libre e integrado - Máquinas, pesas, discos y barras",
  "Clases grupales con profesores - Actívate, baila y relájate",
- "Smart Fit App - Tu plan de entrenamiento personalizado",
+ "Smart App - Tu plan de entrenamiento personalizado",
  "Relájate en los sillones de masajes",
  "5 invitados al mes en el gimnasio que quieras"
 ];
@@ -415,7 +401,7 @@ document.getElementById("planGrid").innerHTML=plans.map(p=>`
  <div class="price"><strong>S/ ${p.p}*</strong><span class="off">50% OFF</span></div>
  <p class="note"><b>mensual por 2 meses</b>, después S/ ${p.o}/mes</p>
  <p class="lock">${p.f}</p>
- <a class="btn" href="https://www.smartfit.com.pe/gimnasios">¡Inscríbete ya!</a>
+ <a class="btn" href="#">¡Inscríbete ya!</a>
  <ul class="feat">${feats.map((t,i)=>`<li class="${i>2?"x":""}">${t}</li>`).join("")}</ul>
  <button class="more" aria-expanded="false">Ver más</button>
 </article>`).join("");
@@ -439,14 +425,7 @@ const tog=o=>{dr.classList.toggle("open",o);sc.classList.toggle("open",o)};
 document.getElementById("menuBtn").onclick=()=>tog(true);
 document.getElementById("closeBtn").onclick=()=>tog(false);
 sc.onclick=()=>tog(false);
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){tog(false);cl.classList.remove("open")}});
-
-// ===== Selector de país =====
-const cs=[["ar","www.smartfit.com.ar"],["br","www.smartfit.com.br"],["cl","www.smartfit.cl"],["co","www.smartfit.com.co"],["cr","www.smartfit.cr"],["do","www.smartfit.com.do"],["ec","www.smartfit.com.ec"],["gt","www.smartfit.com.gt"],["hn","www.smartfit.com.hn"],["ma","www.smartfit.ma"],["mx","www.smartfit.com.mx"],["pa","www.smartfit.com.pa"],["pe","www.smartfit.com.pe"],["ph","www.smartfit.com.ph"],["py","www.smartfit.com.py"],["sv","www.smartfit.com.sv"],["uy","www.smartfit.com.uy"]];
-const cl=document.getElementById("cList"),cb=document.getElementById("cBtn");
-cl.innerHTML=cs.map(([c,u])=>`<li><a href="https://${u}/">${c}</a></li>`).join("");
-cb.onclick=e=>{e.stopPropagation();const o=cl.classList.toggle("open");cb.setAttribute("aria-expanded",o)};
-document.addEventListener("click",()=>cl.classList.remove("open"));
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){tog(false)}});
 
 // ===== Cookies =====
 document.getElementById("ok").onclick=()=>document.getElementById("cookies").classList.add("hide");
