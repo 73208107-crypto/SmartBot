@@ -7,8 +7,26 @@
 <meta name="description" content="Gimnasio Smart - La red Smart tiene como propósito democratizar el acceso a la práctica de actividad física de alto nivel, con planes accesibles y adhesión facilitada">
 <link rel="preconnect" href="#">
 <link href="#" rel="stylesheet">
+<!-- Estilos base del Chat de n8n -->
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 <style>
-:root{--y:#ffc600;--y2:#ffd84d;--k:#1b1b1b;--g:#f4f4f4;--g2:#6b6b6b;--w:#fff;--r:16px}
+:root{
+  --y:#ffc600;--y2:#ffd84d;--k:#1b1b1b;--g:#f4f4f4;--g2:#6b6b6b;--w:#fff;--r:16px;
+  /* Personalización de SmartBot con la paleta exacta de tu web */
+  --chat--color-primary: #ffc600;
+  --chat--color-primary-shade-50: #ffd84d;
+  --chat--color-primary-shade-100: #e6b200;
+  --chat--color-secondary: #1b1b1b;
+  --chat--color-dark: #1b1b1b;
+  --chat--color-light: #f4f4f4;
+  --chat--header--background: #1b1b1b;
+  --chat--header--color: #ffc600;
+  --chat--toggle--background: #ffc600;
+  --chat--toggle--hover--background: #ffd84d;
+  --chat--toggle--active--background: #e6b200;
+  --chat--toggle--color: #1b1b1b;
+  --chat--window--z-index: 90;
+}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:Poppins,Arial,sans-serif;color:var(--k);background:var(--w);line-height:1.5;-webkit-font-smoothing:antialiased}
@@ -149,11 +167,16 @@ footer a:hover{color:var(--y)}
 .rec{display:inline-block;margin-top:16px;background:var(--w);color:var(--k);padding:8px 14px;border-radius:8px;font-size:12px;font-weight:600}
 
 /* Cookies */
-.cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;background:var(--w);border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.25);padding:16px 20px;display:flex;gap:16px;align-items:center;justify-content:space-between;font-size:13px;max-width:900px;margin:0 auto}
+.cookies{position:fixed;left:16px;right:96px;bottom:16px;z-index:60;background:var(--w);border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.25);padding:16px 20px;display:flex;gap:16px;align-items:center;justify-content:space-between;font-size:13px;max-width:860px;margin:0 auto}
 .cookies.hide{display:none}
 .cookies div{display:flex;gap:14px;align-items:center;white-space:nowrap}
 .cookies .btn{padding:8px 24px;font-size:13px}
 .cookies a{text-decoration:underline;font-weight:600}
+
+/* Asegurar que la burbuja de SmartBot siempre esté visible sobre las cookies */
+.n8n-chat-widget {
+  z-index: 95 !important;
+}
 
 @media(max-width:960px){
  nav{display:none}
@@ -166,7 +189,7 @@ footer a:hover{color:var(--y)}
  .slide .d{display:none}.slide .m{display:block;aspect-ratio:1080/1789;width:100%}
  .slide img{aspect-ratio:auto}
  .right>.btn{display:none}
- .cookies{flex-direction:column;align-items:flex-start}
+ .cookies{flex-direction:column;align-items:flex-start;right:16px;bottom:84px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
@@ -429,6 +452,30 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"){tog(false)}});
 
 // ===== Cookies =====
 document.getElementById("ok").onclick=()=>document.getElementById("cookies").classList.add("hide");
+</script>
+
+<!-- ===== Integración SmartBot (n8n) ===== -->
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'https://guillermo29.app.n8n.cloud/webhook/2b5601dd-a0fa-4001-9fbd-c48756e532fb/chat',
+    mode: 'window',
+    showWelcomeScreen: false,
+    initialMessages: [
+      '¡Hola! 💪 Soy SmartBot, tu asistente virtual de Smart Fit Perú.',
+      'Puedo ayudarte con planes (Black, Smart, Fit), precios, sedes, horarios y trámites como cancelaciones o invitados. ¿En qué te ayudo hoy?'
+    ],
+    i18n: {
+      en: {
+        title: 'SmartBot · Smart Fit Perú',
+        subtitle: 'Atención automatizada 24/7',
+        footer: '',
+        getStarted: 'Iniciar conversación',
+        inputPlaceholder: 'Escribe tu consulta aquí...',
+      },
+    },
+  });
 </script>
 </body>
 </html>
